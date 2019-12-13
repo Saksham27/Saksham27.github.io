@@ -1,0 +1,25 @@
+{
+	"name": "portfolio-website",
+	"version": "1.0.0",
+	"description": "A portfolio website for showcasing my skills and work",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "node-sass sass/main.scss resources/css/style.css -w",
+		"compile:sass": "node-sass sass/main.scss resources/css/style.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Saksham27/portfolio.git"
+	},
+	"author": "Saksham Singh",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Saksham27/portfolio/issues"
+	},
+	"homepage": "https://github.com/Saksham27/portfolio#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"bootstrap": "^4.4.1",
+		"node-sass": "^4.13.0"
+	}
+}
