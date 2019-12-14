@@ -1,1 +1,54 @@
+// ************************************************
+// NAVIGATION
+// ________________________________________________
+// ************************************************
 
+// ************************************************
+// SECTION HEADER
+// ________________________________________________
+// ************************************************
+.section-header {
+	background: url(../../resources/img/svg/online-porfolio-light.png) no-repeat;
+	background-position: top;
+	background-size: cover;
+
+	// navigation *****************
+	.navbar-expand-lg .navbar-nav .nav-link {
+		//padding-right: 1rem;
+		//padding-left: 1rem;
+	}
+
+	.navbar-light {
+		& .navbar-nav {
+			& .nav-link {
+				color: $link-color;
+
+				transition: all 0.4s;
+				&:hover {
+					color: $color-white;
+				}
+			}
+
+			& .active > .nav-link {
+				color: $color-primary-light;
+				transition: all 0.4s;
+				font-weight: 600;
+				&:hover {
+					color: $color-white;
+				}
+			}
+		}
+	}
+
+	.section-banner {
+		&--banner-title {
+			p {
+				@include font-size(1.5rem);
+			}
+		}
+	}
+}
+
+.card .card-body .card-text h5 span {
+	font-weight: 400;
+}

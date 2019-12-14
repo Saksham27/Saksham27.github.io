@@ -1,0 +1,51 @@
+*:focus {
+	outline: none !important;
+}
+
+.section-banner--banner-title--button {
+	.cta {
+		&__work,
+		&__work:visited {
+			background: linear-gradient(to right, rgba($color-primary-light, 0.6), rgba($color-primary-light, 1));
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+			border-color: transparent ;
+			border-radius: 0 10px;
+			color: $color-white;
+            transition: background 1s ease;
+            
+
+			&:hover,
+			&:focus {
+				background: linear-gradient(to right, rgba(#d13636, 0.7), rgba(#d13636, 1), rgba(#d13636, 1));
+				color: $color-white;
+				border-color: none;
+			}
+			&:active {
+				background: linear-gradient(to right, rgba(#d13636, 0.7), rgba(#d13636, 1), rgba(#d13636, 1));
+				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+				border-color: transparent;
+			}
+		}
+
+		&__resume,
+		&__resume:visited {
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+			border-color: $color-primary-light;
+			border-radius: 0 10px;
+			color: $color-primary-light;
+			transition: all 0.3s ease;
+
+			&:hover,
+			&:focus {
+				background: linear-gradient(to right, rgba(#d13636, 0.7), rgba(#d13636, 1), rgba(#d13636, 1));
+				color: $color-white;
+				border-color: transparent;
+			}
+			&:active {
+				background: linear-gradient(to right, rgba(#d13636, 0.7), rgba(#d13636, 1), rgba(#d13636, 1));
+				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+				border-color: transparent;
+			}
+		}
+	}
+}

@@ -8,17 +8,134 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,600,900&display=swap');
 
-
+    </style>
     <title>Dev Saksham</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            
-        </div>
-    </div>
+
+    <!-- ****************** Start - Header-section ******************** -->
+    <header class="section-header vh-100 d-flex flex-column justify-content-center">
+
+        <!-- ***********  start - Navigation-section ************ -->
+        <nav class="section-navigation navbar navbar-expand-lg navbar-light bg-transparent pt-3 pb-5 px-10">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="resources/img/logo/aksham-logo (1).png" alt="logo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item mr-2 active">
+                            <a class="nav-link px-2 hover-animate" href="#">
+                                Portfolio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link px-2 hover-animate" href="#">About</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link px-2 hover-animate" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link px-2 hover-animate" href="#">Resume </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- *********** end - Navigation-section ************ -->
+
+        <!-- ***********  start - Banner-section ************ -->
+        <section class="section-banner d-flex align-items-center justify-content-center px-10 flex-grow-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-banner--banner-title col-lg-6 col-md-12 d-flex flex-column align-items-start justify-content-start ">
+                        <h3 class="section-banner--banner-title--text__hey">Hey</h3>
+                        <h1 class="section-banner--banner-title--text__intro text-uppercase display-4">I'm <span class="link link--nukun" data-letters="Saksham">Sak<span>s</span>ham</span></h1>
+                        <h4 class="section-banner--banner-title--text__sub-intro text-uppercase ">
+                            <div id="flip">
+                                <div>
+                                    <div>Web Designer</div>
+                                </div>
+                                <div>
+                                    <div>Frontend Devloper</div>
+                                </div>
+                            </div>
+                        </h4>
+                        <p class="lead mt-4 ">My focus is crafting Clean and User friendly experiences.</p>
+                        <div class="section-banner--banner-title--button mt-3">
+                            <div class="d-flex flex-row flex-wrap justify-content-">
+                                <button type="button" class="section-banner--banner-title--button cta__work btn mg-4 text-uppercase mr-6 " role="button">View work</button>
+                                <button type="button" class="section-banner--banner-title--button cta__resume btn  text-uppercase">View CV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-banner--banner-img col-lg-6 col-md-12 d-flex ">
+                        <img src="resources/img/svg/developer.svg" alt="banner-img" class=" img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *********** end - Banner-section ************ -->
+
+        <!-- *********** start - Social-icon-section ************ -->
+        <section class="section-social-icon py-5">
+            <div class="container-fluid">
+                <div class="row d-flex flex-row justify-content-center ">
+                    <a href="https://github.com/Saksham27" class="px-3"><img class="header-social-icons" src="resources/img/svg/github-brands.svg" alt="github-logo"></a>
+                    <a href="https://codepen.io/saksham27" class="px-3"><img class="header-social-icons" src="resources/img/svg/codepen-brands.svg" alt="codepen-logo"></a>
+                    <a href="https://twitter.com/GeekySaksham27" class="px-3"><img class="header-social-icons" src="resources/img/svg/twitter-brands.svg" alt="twitter-logo"></a>
+                    <a href="https://stackoverflow.com/users/12167961/saksham27" class="px-3"><img class="header-social-icons" src="resources/img/svg/stack-overflow-brands.svg" alt="stack-overflow-logo"></a>
+
+                </div>
+            </div>
+        </section>
+        <!-- *********** end - Social-section ************ -->
+
+    </header>
+    <!-- ****************** end - Header-section ******************** -->
+    <!-- ____________________________________________________________ -->
+
+
+    <!-- ****************** start - Main-section ******************** -->
+    <main class="section-main">
+
+
+        <section class="section-portfolio mt-10">
+            <div class="container">
+                <div class="row">
+                    <h2 class="display-4 text-uppercase text-center m-auto">Work</h2>
+                </div>
+
+                <div class="row ">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">HostIT</h5>
+                            <p class="card-text">
+                                <h5><span class="badge badge-info ">HTML5</span></h5>
+                                <h5><span class="badge badge-info">CSS3</span></h5>
+                                <h5><span class="badge badge-info">Javascript</span></h5>
+                                <h5><span class="badge badge-info">Sass</span></h5></p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <img src="..." class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- ****************** end - Main-section ******************** -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

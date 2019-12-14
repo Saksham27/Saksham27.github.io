@@ -1,0 +1,128 @@
+// ************************************************
+// Navigation link HOVER state animation
+// ________________________________________________
+// ************************************************
+
+.hover-animate {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0%;
+		height: 100%;
+		background-color: transparent;
+		border-radius: 0px 10px;
+		transition: all 0.3s;
+		z-index: -1;
+	}
+
+	&:hover::after {
+		background-color: $color-primary-light;
+		left: 0%;
+		width: 100%;
+	}
+}
+
+// ************************************************
+// Banner title  intro text animation
+// ________________________________________________
+// ************************************************
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+
+	color: #903749;
+}
+
+/* Nukun */
+.link--nukun {
+	font-weight: 600;
+	overflow: hidden;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.link--nukun:hover {
+	color: $color-secondary;
+}
+
+.link--nukun span {
+	color: $color-primary-medium;
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+	transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.link--nukun:hover span {
+	color: $color-primary-light;
+	-webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+	transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+}
+
+// ************************************************
+// Banner title  sub intro text animation
+// ________________________________________________
+// ************************************************
+
+#flip {
+	height: 50px;
+	overflow: hidden;
+}
+
+#flip > div > div {
+	color: #fff;
+	//padding:  12px;
+	padding: 5px 10px;
+	height: 40px;
+	margin-bottom: 51px;
+	display: inline-block;
+	border-radius: 0 10px;
+}
+
+#flip div:first-child {
+	animation: show 8s linear infinite;
+}
+
+// #flip div div {
+//   background:#42c58a;
+// }
+#flip div:first-child div {
+	background: $color-secondary;
+}
+#flip div:last-child div {
+	background: $color-secondary;
+}
+
+@keyframes show {
+	0% {
+		margin-top: -120px;
+	}
+	5% {
+		margin-top: -80px;
+	}
+	46.25% {
+		margin-top: -80px;
+	}
+	53.25% {
+		margin-top: 0px;
+	}
+	95% {
+		margin-top: 0px;
+	}
+	99.99% {
+		margin-top: 40px;
+	}
+	100% {
+		margin-top: -120px;
+	}
+}
