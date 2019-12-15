@@ -2,42 +2,46 @@
 // font-family: 'Lato', sans-serif;
 
 // Color
-$color-primary-light: #e84545;
-$color-primary-medium: #903749;
-$color-primary-dark: #53354a;
-$color-secondary: #2b2e4a;
+$color-primary: #2b2e4a;
+$color-primary-2: #903749;
+$color-primary-3: #53354a;
+$color-secondary: #e84545;
 $color-white: #ffffff;
 
-$link-color: $color-primary-medium;
+$link-color: $color-primary;
 $link-hover-color: white;
-
-
-
-
 
 // *************************************
 // Bootstrap customization
 // ______________________________________
+$body-color: $color-primary;
+
 // FONTS
-$font-family-base : 'Montserrat', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 $enable-responsive-font-sizes: 'true';
 // SPACE
 $spacer: 1rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
-  (
-    0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3),
-    6: ($spacer * 3.5),
-    7: ($spacer * 4),
-    8: ($spacer * 4.5),
-    9: ($spacer * 5),
-    10: ($spacer * 6)
-  ),
-  $spacers
+
+	(
+		0: 0,
+		1: ($spacer * .25),
+		2: ($spacer * .5),
+		3: $spacer,
+		4: ($spacer * 1.5),
+		5: ($spacer * 3),
+		6: ($spacer * 3.5),
+		7: ($spacer * 4),
+		8: ($spacer * 4.5),
+		9: ($spacer * 5),
+		10: ($spacer * 6)
+	),
+	$spacers
 );
+
+// COLORS
+
+$primary: $color-primary;
+$dark: $color-primary-2;

@@ -7,8 +7,12 @@
 // SECTION HEADER
 // ________________________________________________
 // ************************************************
+.jumbotron {
+	background-color: transparent !important;
+}
+
 .section-header {
-	background: url(../../resources/img/svg/online-porfolio-light.png) no-repeat;
+	background: url("../../resources/img/bg-main.png") no-repeat;
 	background-position: top;
 	background-size: cover;
 
@@ -22,15 +26,20 @@
 		& .navbar-nav {
 			& .nav-link {
 				color: $link-color;
+				font-weight: 600;
 
 				transition: all 0.4s;
 				&:hover {
 					color: $color-white;
 				}
+
+				&:focus {
+					font-weight: 600;
+				}
 			}
 
 			& .active > .nav-link {
-				color: $color-primary-light;
+				color: $color-white;
 				transition: all 0.4s;
 				font-weight: 600;
 				&:hover {
@@ -49,6 +58,15 @@
 	}
 }
 
-.card .card-body .card-text h5 span {
-	font-weight: 400;
+// ************************************************
+// SECTION PORTFOLIO
+// ________________________________________________
+// ************************************************
+
+.portfolio-backdrop {
+	background: url("/resources/img/bg-main.png") no-repeat !important;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
 }
+

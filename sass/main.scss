@@ -5,6 +5,7 @@
 
 @import "base/animations";
 @import "base/base";
+
 @import "base/typography";
 
 @import "pages/home";
@@ -13,3 +14,4 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 // ______________ NO CSS BELOW THIS LINE ____________________
 @import "components/buttons";
+@import "base/bootstrap-modified";
