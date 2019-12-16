@@ -1,27 +1,32 @@
+header {
+	padding: 0;
+}
+
+a {
+	color: $color-primary;
+}
 .card {
-	border-radius: 1rem;
+	border-radius: 0 3rem;
 	background: transparent;
 
 	&-title {
-        color: $color-secondary;
-        
+		color: $color-secondary;
+
 		text-transform: uppercase;
 		font-weight: 600;
 	}
 
 	&-header:first-child {
-        background: linear-gradient(to right, $color-white,transparent, transparent);
+		background: linear-gradient(to right, $color-white, transparent, transparent);
 		border-radius: 10px;
-    }
-    
-    
+	}
 }
 
 .project-detail {
-	background: rgba($color-white,0.3);
+	background: rgba($color-white, 0.3);
 }
 
 .btn {
-    color: $color-primary;
-    font-weight: 600;
+	color: $color-primary;
+	font-weight: 600;
 }
