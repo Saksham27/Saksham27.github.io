@@ -1,5 +1,12 @@
-<ifModule mod_headers.c>
-<filesMatch ".(css|jpg|jpeg|png|gif|svg|js|ico)$">
-Header set Cache-Control "max-age=864000, public"
-</filesMatch>
-</ifModule>
+# EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType resources/img/webp "access 1 month"
+ExpiresByType resources/img/mockups/webp "access 1 month"
+ExpiresByType resources/img/svg/svg "access 1 month"
+ExpiresByType resources/img/logo/png "access 1 month"
+ExpiresByType resources/css/css "access 1 month"
+ExpiresByType js/javascript "access 1 month"
+ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES CACHING ##
