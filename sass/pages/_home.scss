@@ -89,12 +89,12 @@
 // ************************************************
 .send-mail {
 	& a {
-		border: 2px solid $color-primary;
+		border: 2px solid $primary;
 		font-weight: 700 !important;
 		text-decoration: none !important;
 
 		&:hover {
-			background-color: $color-primary;
+			background-color: $primary;
 		}
 	}
 }
