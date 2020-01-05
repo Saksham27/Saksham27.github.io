@@ -110,7 +110,7 @@ $breakpoint argument choices --
   background-color: transparent !important; }
 
 .bg-pattern {
-  background: url("../../resources/img/bg-main.webp") no-repeat;
+  background: linear-gradient(to right bottom, #ffffff, #e84545);
   background-position: top;
   background-size: cover; }
 
@@ -149,7 +149,7 @@ $breakpoint argument choices --
   z-index: -1; }
 
 .portfolio-backdrop {
-  background: url("/resources/img/bg-main.webp") no-repeat !important;
+  background: linear-gradient(to right bottom, #ffffff, #e84545) !important;
   background-position: center;
   background-size: cover;
   overflow: hidden; }
@@ -160,6 +160,9 @@ $breakpoint argument choices --
   text-decoration: none !important; }
   .send-mail a:hover {
     background-color: #2b2e4a; }
+
+.email-link {
+  background: #e84545; }
 
 address {
   font-size: calc(1.265rem + 0.18vw); }

@@ -12,7 +12,7 @@
 }
 
 .bg-pattern {
-	background: url("../../resources/img/bg-main.webp") no-repeat;
+	background: linear-gradient(to right bottom, $color-white, $color-secondary);
 	background-position: top;
 	background-size: cover;
 }
@@ -76,7 +76,7 @@
 // ************************************************
 
 .portfolio-backdrop {
-	background: url("/resources/img/bg-main.webp") no-repeat !important;
+	background: linear-gradient(to right bottom, $color-white, $color-secondary) !important;
 
 	background-position: center;
 	background-size: cover;
@@ -97,6 +97,10 @@
 			background-color: $primary;
 		}
 	}
+}
+
+.email-link {
+	background: $color-secondary;
 }
 
 address {
